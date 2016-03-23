@@ -1,0 +1,17 @@
+{
+  "name": "rss-reader-app",
+  "version": "1.0.0",
+  "description": "An angular 1.x app to read and manage RSS",
+  "main": "_server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.x",
+    "express": "^4.11.1",
+    "feedparser": "1.x",
+    "request": "^2.69.0"
+  }
+}

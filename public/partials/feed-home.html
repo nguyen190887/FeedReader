@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-md-3">
+		<div class="folder-panel">
+			<h4>Feeds</h4>
+			<div>
+				<ul class="folder">
+					<li ng-repeat="folder in jsonFeed.feeds">
+						<a href="{{folder.feedUrl}}" ng-click="selectFolder(folder.name, folder.feedUrl, $event)">{{ folder.name }}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-9">
+		<div class="feed-panel">
+			<h4>Feed Content</h4>
+			<div ng-show="showSelectedFolder">
+				<h5>{{ selectedFolder.name }} @ {{ selectedFolder.feedUrl }}</h5>
+				<div ng-show="isLoading">Loading...</div>
+				<ul class="feed-item">
+					<li ng-repeat="item in currentFeedData">
+						<a class="feed-title" href="{{ item.url }}" target="_blank">{{ item.title | decodeHtml }}</a>
+						<span> - {{ item.pubDate | dateTimeFormat }}</span>
+						<!-- <p ng-bind-html="item.description"></p> -->
+						<div ng-bind-html="item.description ? item.description : item.summary | decodeHtml"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

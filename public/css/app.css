@@ -1,0 +1,37 @@
+/* app css stylesheet */
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.page-wrapper{
+	background-color: #fff;
+}
+
+.down-space-20{
+	margin-bottom: 20px;
+}
+
+.feed-item{
+	list-style: none;
+	padding-left: 10px;
+}
+
+.feed-item > li {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 10px;
+	border: solid 1px #eee;
+}
+
+.feed-title{
+	font-size: 1.1em;
+	font-weight: 600;
+}
+.folder-panel, .feed-panel{
+	padding: 10px;
+	border: dashed 1px #ccc;
+}

@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-md-12">
+		<h4>{{ welcomeText }}</h4>
+		<div>
+			<div class="form-horizontal">
+				<div class="form-group" ng-repeat="feed in jsonFeed.feeds">
+					<label class="col-md-1 label-control">Name: </label>
+					<div class="col-md-3">
+						<input type="text" class="form-control" placeholder="Title" value="{{ feed.name }}" />
+					</div>
+					<label class="col-md-1 label-control">Url: </label>
+					<div class="col-md-5">
+						<input type="text" class="form-control" placeholder="Url" value="{{ feed.feedUrl }}" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

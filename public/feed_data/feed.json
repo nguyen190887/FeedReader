@@ -1,0 +1,17 @@
+{
+	"name" : "Feed data v1",
+	"feeds" : [{
+			"name" : "VnExpress",
+			"feedUrl" : "http://vnexpress.net/rss/tin-moi-nhat.rss"
+		}, {
+			"name" : "Thanh Nien",
+			"feedUrl" : "http://www.thanhnien.com.vn/rss/home.rss"
+		}, {
+			"name" : "Tinh Te",
+			"feedUrl" : "http://www.tinhte.vn/rss"
+		}, {
+			"name" : "Bongda+",
+			"feedUrl" : "http://bongdaplus.vn/rss/trang-chu.rss"
+		}
+	]
+}
